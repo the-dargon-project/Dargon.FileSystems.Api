@@ -6,6 +6,7 @@ namespace Dargon.FileSystem
    {
       IFileSystemHandle AllocateRootHandle();
       IoResult AllocateChildrenHandles(IFileSystemHandle handle, out IFileSystemHandle[] childHandles);
+      IoResult AllocateRelativeHandleFromPath(IFileSystemHandle baseNode, string relativePath, out IFileSystemHandle handle);
       IoResult ReadAllBytes(IFileSystemHandle handle, out byte[] bytes);
       void FreeHandle(IFileSystemHandle handle);
       void FreeHandles(IEnumerable<IFileSystemHandle> handles);
