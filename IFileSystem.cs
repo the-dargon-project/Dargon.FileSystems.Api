@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Dargon.FileSystem
+namespace Dargon.FileSystems
 {
    public interface IFileSystem
    {

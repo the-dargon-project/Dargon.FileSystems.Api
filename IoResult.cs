@@ -1,4 +1,4 @@
-﻿namespace Dargon.FileSystem
+﻿namespace Dargon.FileSystems
 {
    public enum IoResult
    {
